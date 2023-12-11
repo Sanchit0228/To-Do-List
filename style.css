@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sometype+Mono&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background:#FFC5C5;
+}
+.box{
+    position: relative;
+    width: 450px;
+    height: 550px;
+    border-radius: 30px;
+    background: #FFEBD8;
+    padding: 30px 50px;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+       rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+     rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px,
+       rgba(0, 0, 0, 0.09) 0px 32px 16px;
+       
+}
+
+
+  .h2{
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    font-size: 1.75em; 
+    
+  }
+  #inputbx{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease-in-out;
+
+
+  }
+
+ 
+  #inputbx:hover {
+    transform: scale(1.2, 1.2);
+  }
+  
+  /* Fade in the pseudo-element with the bigger shadow */
+  #inputbx:hover::after {
+    opacity: 1;
+  }
+
+
+
+  .box li{
+    position: relative;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    background: #89B9AD;
+    margin: 15px 0;
+    padding: 10px 10px 10px 45px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+       rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+     rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px,
+       rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  }
+
+
+  .box li i{
+    position: absolute;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #F875AA;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+
+  .box li i::before{
+    
+    content: ' ';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(45deg);
+    margin-top: 14px;
+  }
+  .box li i::after{
+    background: #fff;
+    content: ' ';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    transform: rotate(-45deg);
+    margin-top: 14px;
+  }
+
+.box li::before{
+    content: ' ';
+    position: absolute;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    background: #F875AA;
+    border-radius: 50px;
+}
+  .box li.done{
+    background: rgb(145, 143, 143);
+
+  }
+   .box li.done:after
+   {
+    content: '';
+    position: absolute;
+    left: 16px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(315deg);
+   }
+
+   #list{
+    position: relative;
+    margin-top: 30px;
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+   }
+
+   ::-webkit-scrollbar-track
+   {
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+   }
+   ::-webkit-scrollbar
+   {
+    width: 5px;
+   }
+   ::-webkit-scrollbar-thumb
+   {
+    background: #6d6c6c;
+   }
